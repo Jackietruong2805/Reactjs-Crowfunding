@@ -8,7 +8,7 @@ const Label = (props) => {
     <label
       htmlFor={htmlFor}
       className={classNames(
-        'inline-block text-sm font-medium cursor-pointer dark:text-text3 text-text2',
+        'inline-block self-start text-sm font-medium cursor-pointer dark:text-text3 text-text2',
         className
         )}
     >

@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import SignInPage from "./pages/SignInPage";
 import DashboardPage from "pages/DashboardPage";
 import CampaignPage from "pages/CampaignPage";
+import StartCampaignPage from "pages/StartCampaignPage";
 
 const SignUpPage = lazy(() => import("./pages/SignUpPage"))
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
           <Route path="/" element={<DashboardPage></DashboardPage>}></Route>
           <Route path="/campaign" element={<CampaignPage></CampaignPage>}></Route>
+          <Route path="/start-campaign" element={<StartCampaignPage></StartCampaignPage>}></Route>
           <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
           <Route path="/sign-in" element={<SignInPage></SignInPage>}></Route>
       </Routes>

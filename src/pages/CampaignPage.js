@@ -15,26 +15,37 @@ const CampaignPage = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokewidth="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              classname="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
-                strokelinecap="round"
-                strokelinejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M12 4.5v15m7.5-7.5h-15"
               />
             </svg>
           </div>
           <div className="flex-1">
-            <h1 className="text-[22px] font-semibold mb-2">Create Your Campaign</h1>
-            <p className="mb-2 text-sm text-text3">Jump right into out editor and create your first Virtue campaign!</p>
+            <h1 className="text-[22px] font-semibold mb-2">
+              Create Your Campaign
+            </h1>
+            <p className="mb-2 text-sm text-text3">
+              Jump right into out editor and create your first Virtue campaign!
+            </p>
             <a href="/" className="text-sm text-primary">
-                Need any help? Learm More
+              Need any help? Learm More
             </a>
           </div>
         </div>
-        <Button text="secondary" className="bg-secondary bg-opacity-20" type="button">Create campaign</Button>
+        <Button
+          kind="ghost"
+          type="button"
+          className="px-8"
+          href="/start-campaign"
+        >
+          Create campaign
+        </Button>
       </div>
       <Heading number={4}>Your campaign</Heading>
       <CampaignGrid type="secondary">
@@ -43,6 +54,24 @@ const CampaignPage = () => {
         <CampaignFeature></CampaignFeature>
         <CampaignFeature></CampaignFeature>
       </CampaignGrid>
+      <div className="mt-10 text-center"></div>
+      <Button kind="ghost" className="px-8 mx-auto">
+        <span>See more</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-5 h-5"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 6v12m6-6H6"
+          />
+        </svg>
+      </Button>
     </LayoutDashboard>
   );
 };
